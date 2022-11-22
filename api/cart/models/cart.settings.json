@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cart",
+  "info": {
+    "name": "Cart",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "default": "Monstera",
+      "required": true
+    },
+    "Price": {
+      "type": "integer",
+      "default": 24,
+      "required": true
+    },
+    "Image": {
+      "type": "string",
+      "required": true
+    },
+    "user": {
+      "via": "Cart",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

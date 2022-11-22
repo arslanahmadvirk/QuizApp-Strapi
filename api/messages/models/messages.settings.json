@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "messages",
+  "info": {
+    "name": "Messages",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Subject": {
+      "type": "string",
+      "required": true
+    },
+    "Message": {
+      "type": "text",
+      "required": true
+    },
+    "user": {
+      "via": "Messages",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

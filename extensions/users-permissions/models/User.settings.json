@@ -62,29 +62,6 @@
     "name": {
       "type": "string",
       "required": true
-    },
-    "address": {
-      "type": "string",
-      "required": true
-    },
-    "Phonenumber": {
-      "type": "biginteger",
-      "required": true
-    },
-    "Image": {
-      "type": "text"
-    },
-    "Cart": {
-      "collection": "cart",
-      "via": "user"
-    },
-    "Messages": {
-      "collection": "messages",
-      "via": "user"
-    },
-    "Shipping_Orders": {
-      "via": "user",
-      "collection": "delivery-data"
     }
   }
 }

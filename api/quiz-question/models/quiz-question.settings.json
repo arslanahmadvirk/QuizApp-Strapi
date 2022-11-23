@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "quiz_questions",
+  "info": {
+    "name": "Quiz_Question"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "question": {
+      "type": "string",
+      "required": true
+    },
+    "option1": {
+      "type": "string",
+      "required": true
+    },
+    "option2": {
+      "type": "string",
+      "required": true
+    },
+    "option3": {
+      "type": "string",
+      "required": true
+    },
+    "option4": {
+      "type": "string",
+      "required": true
+    },
+    "correct_option": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

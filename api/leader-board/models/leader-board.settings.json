@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "leader_boards",
+  "info": {
+    "name": "Leader_Board"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user_name": {
+      "type": "string",
+      "required": true
+    },
+    "points": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}
